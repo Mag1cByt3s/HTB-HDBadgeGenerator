@@ -7,7 +7,7 @@ cd /home/generator/HTB-HDBadgeGenerator
 git add *
 
 # Commit the changes
-git commit -am "Update 878647.html"
+git commit --allow-empty -am "Update 878647.html"
 
 # Push the changes to the remote repository
 git push -u origin main
