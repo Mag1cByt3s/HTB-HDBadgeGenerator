@@ -33,10 +33,10 @@ def generateHTB(htbId):
           # Use signatureBase64 variable as needed
           signatureHTML = base64.b64decode(signatureBase64).decode('utf-8')
 
-          signatureHTML = signatureHTML.replace('https://www.hackthebox.com/images/screenshot.png',"assets/htb_crosshair.png")
+          signatureHTML = signatureHTML.replace('https://www.hackthebox.com/images/screenshot.png',"https://www.ppeinecke.de/custom_assets/images/htb_crosshair.png")
           signatureHTML = signatureHTML.replace('_thumb.png',".png")
-          signatureHTML = signatureHTML.replace('https://www.hackthebox.com/images/star.png',"assets/htb_star.png")
-          signatureHTML = signatureHTML.replace('url(https://www.hackthebox.com/images/icon20.png); ',"url('assets/htb_logo.webp'); background-size: 20px;")
+          signatureHTML = signatureHTML.replace('https://www.hackthebox.com/images/star.png',"https://www.ppeinecke.de/custom_assets/images/star.png")
+          signatureHTML = signatureHTML.replace('url(https://www.hackthebox.com/images/icon20.png); ',"url('https://www.ppeinecke.de/custom_assets/images/htb_logo.webp'); background-size: 20px;")
 
           signatureFile = open(htbId + '.html','w')
           signatureFile.write(signatureHTML)
